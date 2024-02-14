@@ -1,0 +1,21 @@
+{
+  "name": "marvelcrud",
+  "version": "1.0.0",
+  "description": "Bienvenue dans le projet Marvel CRUD ! L'objectif de ce projet est de vous apprendre à créer une application web pour gérer les personnages et les équipes de l'univers Marvel en utilisant NodeJS, Express, Mustache, MySQL, Nodemon et Pico.css",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JeremyAMichel/node-marvel-crud"
+  },
+  "keywords": [
+    "Marvel",
+    "Crud",
+    "Node",
+    "Training"
+  ],
+  "author": "Jérémy Michel",
+  "license": "ISC"
+}
