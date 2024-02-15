@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Liste des Personnages</title>
+</head>
+<body>
+    <h1>Liste des Personnages</h1>
+    <ul>
+        {{#personnages}}
+        <li>
+            <a href="/personnages/{{id}}">{{nom}}</a>
+        </li>
+        {{/personnages}}
+    </ul>
+</body>
+</html>

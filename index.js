@@ -24,7 +24,25 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
 // Routes à ajouter ici
+app.get('/', (req, res) => {
+    res.send('<h1>Hello World</h1><a href="/personnages">Personnages</a>');
+})
 
+app.get('/personnages', (req, res) => {
+
+    // TODO changer  
+    const personnages = [
+        { id: 1, nom: 'Iron man'},
+        { id: 2, nom: 'Spider-Man'},
+        { id: 3, nom: 'Hulk'},
+    ];
+
+    res.render('personnages/personnages', {personnages: personnages});
+})
+
+app.get('/personnages/:id', (req, res) => {
+    res.send("page d'un seul personnage");
+})
 
 app.listen(port, () => {
     console.log(`marvel crud listening on port ${port}`);
